@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Profile Page</title>
+    <meta name="description" content="自己紹介">
+    
+    <!--　リセットcss  -->
+    <link rel="stylesheet" href="https://unpkg.com/ress/dist/ress.min.css">
+
+    <!-- Googleフォント -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=IM+Fell+Great+Primer&display=swap" rel="stylesheet">
+    <!--　オリジナルcss  -->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <!--　ヘッダー  -->
+
+    <header class="header">
+        <h1 class="header-title">MY PROFILE PAGE</h1>
+    </header>
+    <!--　メイン画像  -->
+    <section class="hero">
+        <img src="img/hero.jpg" alt="メイン画像">
+    </section>
+
+    <!--　About  -->
+    <div class="container">
+
+        <section class="about">
+            <h2 class="section-title">About</h2>
+            <div class="section-inner">
+                <div class="about-img">
+                    <img src="img/img_about.jpg" alt="自分の写真">
+                </div>
+                <div class="about-text">
+                    <p>生年月日：テキストテキスト</p>
+                    <p>出身地：テキストテキスト</p>
+                    <p>最終学歴：テキスト</p>
+                    <p>資格：テキスト、テキスト</p>
+                </div>
+            </div>
+        </section>
+
+        <!--　Works  -->
+        <section class="works">
+            <h2 class="section-title">Works</h2>
+            <div class="works-img">
+                <img src="img/img-01.jpg" alt="作品1">
+                <img src="img/img-02.jpg" alt="作品2">
+                <img src="img/img-03.jpg" alt="作品3">
+                <img src="img/img-04.jpg" alt="作品4">
+                <img src="img/img-05.jpg" alt="作品5">
+                <img src="img/img-06.jpg" alt="作品6">
+            </div>
+        </section>
+
+        <!--　Contact  -->
+        <section class="contact">
+            <h2 class="section-title">Contact</h2>
+            <form>
+
+                <div class="form-inner-name">
+                    <label for="name">NAME</label>
+                    <input type="text" id="name" name="name">
+                </div>
+
+                <div class="form-inner-mail">
+                    <label for="email">E-mail</label>
+                    <input type="email" id="email" name="email">
+                </div>
+                <div class="form-inner-message">
+                    <label for="message">MESSAGE</label>
+                    <textarea id="message" name="message" rows="4"></textarea>
+                </div>
+
+                <div class="form-btn">
+                    
+                    <button type="submit" class="btn">送信</button>
+                </div>
+            </form>
+        </section>
+
+    </div>
+    <!--　フッター  -->
+    <footer>
+        <p>©2025 My Profile</p>
+    </footer>
+</body>
+
+</html>

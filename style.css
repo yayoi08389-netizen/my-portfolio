@@ -1,0 +1,221 @@
+@charset "UTF-8";
+
+/*-------------------------------------------
+共通部分
+-------------------------------------------*/
+html {
+    font-size: 100%;
+}
+
+body {
+    font-family: "IM Fell Great Primer", serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+a {
+    text-decoration: none;
+}
+
+img {
+    max-width: 100%;
+}
+
+li {
+    list-style: none;
+}
+
+header,
+.container {
+    max-width: 880px;
+    margin: 0 auto;
+    /* padding: 0 4%; */
+    text-align: center;
+}
+
+.section-title {
+    padding-top: 20px;
+    font-size: 3rem;
+    color: #383e45;
+    display: inline-block;
+    width: auto;
+    height: auto;
+    /* width: 320px が入り幅固定 → スマホで文字折れするのでauto使用 */
+}
+
+
+/*-------------------------------------------
+ヘッダー
+-------------------------------------------*/
+.header {
+    height: 80px;
+}
+
+.header-title {
+    color: #383e45;
+    font-size: 4rem;
+}
+
+/*-------------------------------------------
+メイン画像
+-------------------------------------------*/
+.hero {
+    margin-bottom: 90px;
+}
+
+.hero img {
+    width: 100%;
+    max-height: 580px;
+    object-fit: cover;
+}
+
+/*-------------------------------------------
+About
+-------------------------------------------*/
+.about .section-title {
+    padding-top: 20px;
+}
+
+.section-inner {
+    display: flex;
+    justify-content: center;
+    margin: 20px 0;
+    padding-bottom: 60px;
+    align-items: center;
+}
+
+.about img {
+    width: 180px;
+    height: 180px;
+    border-radius: 50%;
+}
+
+.about-text {
+    margin-left: 45px;
+    text-align: left;
+    font-size: 1.5rem;
+    line-height: 1.7;
+}
+
+@media(max-width:768px) {
+    .about .section-inner {
+        display: block;
+        flex-direction: column;
+        gap: 20px;
+        padding: 0 16px;
+        text-align: center;
+}
+
+    .about-text {
+        display: inline-block;
+        margin-left: 0;
+        text-align: left;
+}
+
+}
+
+/*-------------------------------------------
+Works
+-------------------------------------------*/
+.works-img {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: 20px;
+    padding-bottom: 60px;
+    margin-top: 20px;
+}
+
+.works img {
+    width: 100%;
+    display: block;
+}
+
+
+/*-------------------------------------------
+Contact
+-------------------------------------------*/
+.contact .section-title {
+    margin-bottom: 20px;
+}
+
+
+
+label {
+    display: inline-block;
+    text-align: left;
+    width: 150px;
+    vertical-align: top;
+}
+
+input[type="text"],
+input[type="email"] {
+    height: 40px;
+    margin-bottom: 20px;
+    border: 1px solid #383e45;
+    /* 枠線の太さ、種類、色を指定 */
+    padding: 8px;
+    /* 内側の余白 */
+}
+
+textarea {
+    height: 160px;
+    border: 1px solid #383e45;
+    /* 枠線の太さ、種類、色を指定 */
+    padding: 8px;
+    /* 内側の余白 */
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+    width: 100%;
+    max-width: 715px;
+}
+
+@media (max-width: 768px) {
+    .contact form {
+        padding: 0 16px;
+        max-width: 720px;
+        margin: 0 auto;
+    }
+
+    label {
+        width: 100%;
+        margin-bottom: 6px;
+    }
+}
+
+/**** ボタン ****/
+.btn {
+    margin-top: 50px;
+    display: inline-block;
+    width: 153px;
+    height: 60px;
+    padding: 10px 0;
+    border-radius: 8px;
+    transition: .5s;
+    font-size: 1.3em;
+    line-height: 2;
+    cursor: pointer;
+    background-color: rgb(82, 80, 80);
+    color: #fff;
+    margin-bottom: 110px
+}
+
+.btn:hover {
+    background-color: black;
+}
+
+/*-------------------------------------------
+フッター 
+-------------------------------------------*/
+footer {
+    background-color: black;
+    padding: 10px 0;
+}
+
+footer p {
+    color: #fff;
+    text-align: center;
+    margin: 0;
+}
